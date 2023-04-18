@@ -1,0 +1,118 @@
+{	
+    "preguntas": [
+        {
+			"nombre": "Geografía",
+			"id": 1,
+			"preguntas": [
+				{
+					"id:":1,
+                    "pregunta": "¿Cuál es el país más pequeño del mundo?",
+                    "opciones": "Ciudad del Vaticano* || Guayana Francesa || Chile || Israel"					
+				},
+				{
+					"id:":2,
+                    "pregunta": "¿A cuál ciudad se le considera 'La Capital del Mundo'?",
+                    "opciones": "Moscú || Bogotá || Nueva York* || París"						
+				},
+				{
+					"id:":3,
+                    "pregunta": "¿Cúal es el páramo más grande del mundo?:",
+                    "opciones": "Talamanca || Sumapaz* || Purace || Cucuy"					
+				},
+				{
+					"id:":4,
+                    "pregunta": "¿Cuántas zonas horarias alberga Rusia?",
+                    "opciones": "14 || 8 || 2 || 11*"						
+				},
+				{
+					"id:":5,
+                    "pregunta": "¿Cuántos continentes existen en el mundo?",
+                    "opciones": "5 || 6 || 7* || 8"					
+				}				
+				
+			]
+			
+		},
+		{
+			"nombre":"Historia",
+			"id":"2",
+			"preguntas": [
+				{
+					"id:":1,
+                    "pregunta": "¿En que año se dio inicio a la revolución francesa?",
+                    "opciones": "1889 || 1914 || 1536 || 1789*"						
+				},
+				{
+					"id:":2,
+                    "pregunta": "¿Cuáles fueron los países pertenecientes a la triple alianza durante la primera guerra mundial?:",
+                    "opciones": "Italia, Francia, Hungría || Alemania, Italia, Hungría* || Rusia, Italia, Hungría || Alemania, Rusia, Italia"						
+				}
+			]			
+		},
+		{
+			"nombre":"Ciencia",
+			"id":"3",
+			"preguntas": [
+				{
+					"id:":1,
+                    "pregunta": "¿Cuál es el símbolo químico del azufre?",
+                    "opciones": "S* || Ar || Fe || H"					
+				},
+				{
+					"id:":2,
+                    "pregunta": "¿Cuál fue el invento que hizo famoso a Thomas A. Edison?:",
+                    "opciones": "La telecomunicación a distancia || La electricidad || La bombilla* || La combustión de fósiles para generar movimiento"						
+				}
+			]
+		},
+		{
+			"nombre":"Deportes",
+			"id":"4",
+			"preguntas": [
+				{
+					"id:":1,
+                    "pregunta": "¿Cual es el deporte más seguido?",
+                    "opciones": "Baloncesto || Béisbol || Golf || Fútbol*"					
+				},
+				{
+					"id:":2,
+                    "pregunta": "¿Cuáles son los colores de los Juegos Olímpicos?:",
+                    "opciones": "Azul, Rojo, Amarillo, Naranja, Blanco || Verde, Negro, Violeta, Blanco, Lima || Azul, Rojo, Amarillo, Verde, Negro* || Azul, Rojo, Morado, Verde, Negro"						
+				}				
+			]			
+		},
+		{
+			"nombre":"Anime y Manga",
+			"id":"5",
+			"preguntas": [
+				{
+					"id:":1,
+                    "pregunta": "Boku no Piko es",
+                    "opciones": "Ecchi || Isekai || Yaoi* || Shonen"					
+				},
+				{
+					"id:":2,
+                    "pregunta": "Boku no Hero Academia es:",
+                    "opciones": "Ecchi || Isekai || Yaoi || Shonen*"						
+				}				
+			]			
+		},
+		{
+			"nombre":"Videojuegos",
+			"id":"6",
+			"preguntas": [
+				{
+					"id:":1,
+                    "pregunta": "¿Cuál fue la primera consola de la quinta generación (primera generacion en tener graficos completamente en 3 dimensiones) en ser lanzada?:",
+                    "opciones": "Nintendo 64 || Sega Saturn* || PlayStation 1 || Sega DreamCast"					
+				},
+				{
+					"id:":2,
+                    "pregunta": "¿Cuál ha sido el vídeojuego más rentable de la historia?",
+                    "opciones": "Doki Doki Literature Club || Genshin Impact || Geometry Dash || Minecraft*"						
+				}				
+			]			
+		}		
+
+    ]
+}

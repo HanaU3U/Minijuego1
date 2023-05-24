@@ -1,193 +1,190 @@
-{	
-    "preguntas": [
-        {
+{
+	"preguntas": [
+		{
 			"nombre": "Geografía",
 			"id": 1,
 			"preguntas": [
-				{
-					"id:":1,
+				{ 
+					"id": 1,
 					"pregunta": "El Río Nilo se encuentra en África",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":2,
-                    "pregunta": "La capital de Rumania es Bruselas",
-                    "opciones": "Verdadero || Falso*"					
+					"id": 2,
+					"pregunta": "La capital de Rumania es Bruselas",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":3,
-                    "pregunta": "El monte Chimborazo es el punto más alto del planeta",
-                    "opciones": "Verdadero* || Falso"					
+					"id": 3,
+					"pregunta": "El monte Chimborazo es el punto más alto del planeta",
+					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":4,
-                    "pregunta": "El océano atlántico es el más grande del mundo",
-                    "opciones": "Verdadero || Falso*"						
+					"id": 4,
+					"pregunta": "El océano atlántico es el más grande del mundo",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":5,
-                    "pregunta": "Ucrania hizo parte de la URSS",
-                    "opciones": "Verdadero* || Falso"					
+					"id": 5,
+					"pregunta": "Ucrania hizo parte de la URSS",
+					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":6,
-                    "pregunta": "La temperatura ambiente aumenta conforme la altitud se aleja del nivel del mar",
-                    "opciones": "Verdadero* || Falso"						
+					"id": 6,
+					"pregunta": "La temperatura ambiente aumenta conforme la altitud se aleja del nivel del mar",
+					"opciones": "Verdadero* || Falso"
 				}
-				
 			]
-			
 		},
 		{
-			"nombre":"Historia",
-			"id":"2",
+			"nombre": "Historia",
+			"id": 2,
 			"preguntas": [
 				{
-					"id:":1,
+					"id": 1,
 					"pregunta": "Estados Unidos tuvo influencia en el proceso de independización de Panamá.",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":2,
-                    "pregunta": "El inicio de la primera revolución industrial tuvo lugar en Estados Unidos a inicios del siglo XVIII.",
-                    "opciones": "Verdadero || Falso*"					
+					"id": 2,
+					"pregunta": "El inicio de la primera revolución industrial tuvo lugar en Estados Unidos a inicios del siglo XVIII.",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":3,
-                    "pregunta": "La ciudad de Alejandria se encuentra en egipto.",
-                    "opciones": "Verdadero* || Falso"					
+					"id": 3,
+					"pregunta": "La ciudad de Alejandria se encuentra en egipto.",
+					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":4,
-                    "pregunta": "Albert Einstein tuvo la oportunidad de ser el presidente de Israel.",
-                    "opciones": "Verdadero* || Falso"					
-				}				
-			]			
+					"id": 4,
+					"pregunta": "Albert Einstein tuvo la oportunidad de ser el presidente de Israel.",
+					"opciones": "Verdadero* || Falso"
+				}
+			]
 		},
 		{
-			"nombre":"Ciencia",
-			"id":"3",
+			"nombre": "Ciencia",
+			"id": 3,
 			"preguntas": [
 				{
-					"id:":1,
+					"id": 1,
 					"pregunta": "La energía potencial elástica está determinada por la masa y la posición de un objeto.",
 					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":2,
-                    "pregunta": "La velocidad de un cuerpo hace referencia a una relación directamente proporcional entre el tiempo y el cambio de su posición",
-                    "opciones": "Verdadero* || Falso"					
+					"id": 2,
+					"pregunta": "La velocidad de un cuerpo hace referencia a una relación directamente proporcional entre el tiempo y el cambio de su posición",
+					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":3,
+					"id": 3,
 					"pregunta": "A medida que el agua se congela, pierde densidad.",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":4,
-                    "pregunta": "El oso perezoso es el animal que más duerme en un solo día.",
-                    "opciones": "Verdadero || Falso*"					
-				},	
+					"id": 4,
+					"pregunta": "El oso perezoso es el animal que más duerme en un solo día.",
+					"opciones": "Verdadero || Falso*"
+				},
 				{
-					"id:":5,
-                    "pregunta": "Entre Marte y Júpiter se encuentra un anillo de asteroides.",
-                    "opciones": "Verdadero* || Falso"					
-				}				
+					"id": 5,
+					"pregunta": "Entre Marte y Júpiter se encuentra un anillo de asteroides.",
+					"opciones": "Verdadero* || Falso"
+				}
 			]
 		},
 		{
-			"nombre":"Deportes",
-			"id":"4",
-			"preguntas": [
+			"nombre": "Deportes",
+			"id": 4,
+			"preguntas": [ 
 				{
-					"id:":1,
+					"id": 1,
 					"pregunta": "¿La primera Copa Mundial de Fútbol fue disputada en 1930?",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":2,
-                    "pregunta": "¿Michael Jordan ganó 6 campeonatos con los Chicago Bulls?",
-                    "opciones": "Verdadero* || Falso"					
+					"id": 2,
+					"pregunta": "¿Michael Jordan ganó 6 campeonatos con los Chicago Bulls?",
+					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":3,
+					"id": 3,
 					"pregunta": "¿El deporte más visto es el Beisbol?",
 					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":4,
-                    "pregunta": "¿El significado de NBA es Negros Bien Altos?",
-                    "opciones": "Verdadero || Falso*"					
+					"id": 4,
+					"pregunta": "¿El significado de NBA es Negros Bien Altos?",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":5,
-                    "pregunta": "¿Colombia es campeón de la Copa Mundial de Fútbol?",
-                    "opciones": "Verdadero || Falso*"					
-				}					
-			]			
+					"id": 5,
+					"pregunta": "¿Colombia es campeón de la Copa Mundial de Fútbol?",
+					"opciones": "Verdadero || Falso*"
+				}
+			]
 		},
 		{
-			"nombre":"Anime y Manga",
-			"id":"5",
-			"preguntas": [
+			"nombre": "Anime y Manga",
+			"id": 5,
+			"preguntas": [ 
 				{
-					"id:":1,
+					"id": 1,
 					"pregunta": "El mangaka Junji Ito tiene una obra titulada 'Hell Star Remina'",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":2,
-                    "pregunta": "El controversial anime Sword Art Online (SAO) fue adaptado directamente del manga, el cuál a su vez es una adaptación a la novela ligera con el mismo nombre",
-                    "opciones": "Verdadero || Falso*"					
+					"id": 2,
+					"pregunta": "El controversial anime Sword Art Online (SAO) fue adaptado directamente del manga, el cuál a su vez es una adaptación a la novela ligera con el mismo nombre",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":3,
+					"id": 3,
 					"pregunta": "El creador del manga Jojo’s Bizarre Adventure, Hirohiko Araki basa los nombres de los Stands de su obra en referencias a sus gustos musicales",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":4,
-                    "pregunta": "Sazae-san es el anime más largo de la historia con mas de 7000 episodios.",
-                    "opciones": "Verdadero* || Falso"					
+					"id": 4,
+					"pregunta": "Sazae-san es el anime más largo de la historia con mas de 7000 episodios.",
+					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":5,
-                    "pregunta": "El 'Castillo Vagabundo' fue la primer película anime en ganar un Oscar",
-                    "opciones": "Verdadero || Falso*"					
+					"id": 5,
+					"pregunta": "El 'Castillo Vagabundo' fue la primer película anime en ganar un Oscar",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":6,
-                    "pregunta": "Rumiko Takahashi, autora de 'Ranma 1⁄2' e 'Inuyasha', es la mujer más rica de Japón.",
-                    "opciones": "Verdadero* || Falso"					
-				}				
-			]			
+					"id": 6,
+					"pregunta": "Rumiko Takahashi, autora de 'Ranma 1⁄2' e 'Inuyasha', es la mujer más rica de Japón.",
+					"opciones": "Verdadero* || Falso"
+				}
+			]
 		},
 		{
-			"nombre":"Videojuegos",
-			"id":"6",
+			"nombre": "Videojuegos",
+			"id": 6,
 			"preguntas": [
 				{
-					"id:":1,
+					"id": 1,
 					"pregunta": "Rockstar Games es propiedad de Tencent",
 					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":2,
-                    "pregunta": "Los juego de Pokémon 'Blanco y Negro' y 'Blanco 2 y Negro 2' transcurren en la región de Hoenn",
-                    "opciones": "Verdadero || Falso*"					
+					"id": 2,
+					"pregunta": "Los juego de Pokémon 'Blanco y Negro' y 'Blanco 2 y Negro 2' transcurren en la región de Hoenn",
+					"opciones": "Verdadero || Falso*"
 				},
 				{
-					"id:":3,
+					"id": 3,
 					"pregunta": "El principal diseñador de Metal Gear fue Hideo Kojima",
 					"opciones": "Verdadero* || Falso"
 				},
 				{
-					"id:":4,
-                    "pregunta": "La mascota de SEGA 'Sonic The Hedgehog' hizo su debut en 1991 con su primer juego para la Sega Genesis",
-                    "opciones": "Verdadero || Falso*"					
-				}				
-			]			
-		}		
-
-    ]
+					"id": 4,
+					"pregunta": "La mascota de SEGA 'Sonic The Hedgehog' hizo su debut en 1991 con su primer juego para la Sega Genesis",
+					"opciones": "Verdadero || Falso*"
+				}
+			]
+		}
+	]
 }

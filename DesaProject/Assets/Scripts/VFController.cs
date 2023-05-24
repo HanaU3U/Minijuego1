@@ -12,9 +12,9 @@ public class VFController : MonoBehaviour
     [SerializeField] private TMP_Text _questionText;
     [SerializeField] private JsonReader _questionList;
 
-    // Este es el array de los generos escojidos estara aca de momento (Y publico para Testeo)
-    [Tooltip("El id del genero debe ser el de 'el genero deseado' menos 1")]
-    public int[] generosPregutas; // Nota cada objeto es el id del genero -1
+    // Aqui es para los generos de las preguntas
+    public TopicController generosObject;
+    private List<int> _generosPregutas = new List<int>(6); // Nota cada objeto es el id del genero -1
 
     // Uso el start para consegir el texto de la pregunta y las posibles preguntas
     private void Start() {
@@ -25,19 +25,30 @@ public class VFController : MonoBehaviour
         _questionList = _question.GetComponent<JsonReader>();
     }
 
+    // Funcion q actualiza los generos escojidos se ejecuta al cambiar de pantallas
+    public void UpdateTopics() {
+        for (int i = 0; i < generosObject.generosEscojidos.Count; i ++) {
+            _generosPregutas.Add(generosObject.generosEscojidos[i]);
+        }
+    }
+
     // Esta es la funcion q se ejecuta al dar click en el boton (Cambia a una pregunta del Json)
     public void ChangeQuestionVF() {
         // Primero se escoje uno de los generos seleccionados
-        int qstTopic = Random.Range(0, generosPregutas.Length);
+        int tempRand = Random.Range(0, _generosPregutas.Count);
+        int qstTopic = _generosPregutas[tempRand];
+        
+        Debug.Log(_questionList.qst.preguntas.Length);
+        Debug.Log(_generosPregutas[qstTopic]);
 
         // Genero un random q sera el numero de la preunta del Genero (obio en rango de la cantidad de preguntas)
-        int qstNum = Random.Range(0, _questionList.qst.preguntas[generosPregutas[qstTopic]].preguntas.Length);
-        
+        int qstNum = Random.Range(0, _questionList.qst.preguntas[_generosPregutas[qstTopic]].preguntas.Length);
+
         // Para luego cambiar el texto q se muestra
-        _questionText.text = _questionList.qst.preguntas[generosPregutas[qstTopic]].preguntas[qstNum].pregunta;
+        _questionText.text = _questionList.qst.preguntas[_generosPregutas[qstTopic]].preguntas[qstNum].pregunta;
 
         // Y dar la respuesta por consola (pa confirmar de momento)
-        Debug.Log("Respuesta: " + GetAnswerVF(generosPregutas[qstTopic], qstNum));
+        Debug.Log("Respuesta: " + GetAnswerVF(_generosPregutas[qstTopic], qstNum));
     }
 
     // Esta funcion regresa si la respuesta correcta es verdadero o falso (True or False)

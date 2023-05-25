@@ -16,13 +16,24 @@ public class VFController : MonoBehaviour
     public TopicController generosObject;
     private List<int> _generosPregutas = new List<int>(6); // Nota cada objeto es el id del genero -1
 
-    // Uso el start para consegir el texto de la pregunta y las posibles preguntas
-    private void Start() {
+    // Estos son los parametros q indican q genro tiene la pregunta actual y su id (ambos - 1)
+    private int _qstTopic;
+    private int _qstNum;
+
+    // Por ultimo el check y su animator
+    public GameObject check;
+    private Animator _checkAnimator;
+
+    // Uso el awake para consegir el texto de la pregunta y las posibles preguntas
+    void Awake() {
         // Primero tomo el TMP (text mesh Pro) de la pregunta para luego cambiarlo
         _questionText = _question.GetComponentInChildren<TMP_Text>();
 
         // Luego tomo el array de preguntas leidas de Json
         _questionList = _question.GetComponent<JsonReader>();
+
+        // Se toma el animator del check
+        _checkAnimator = check.GetComponent<Animator>();
     }
 
     // Funcion q actualiza los generos escojidos se ejecuta al cambiar de pantallas
@@ -36,16 +47,16 @@ public class VFController : MonoBehaviour
     public void ChangeQuestionVF() {
         // Primero se escoje uno de los generos seleccionados
         int tempRand = Random.Range(0, _generosPregutas.Count);
-        int qstTopic = _generosPregutas[tempRand];
+        _qstTopic = _generosPregutas[tempRand];
 
         // Genero un random q sera el numero de la preunta del Genero (obio en rango de la cantidad de preguntas)
-        int qstNum = Random.Range(0, _questionList.qst.preguntas[_generosPregutas[qstTopic]].preguntas.Length);
+        _qstNum = Random.Range(0, _questionList.qst.preguntas[_generosPregutas[_qstTopic]].preguntas.Length);
 
         // Para luego cambiar el texto q se muestra
-        _questionText.text = _questionList.qst.preguntas[_generosPregutas[qstTopic]].preguntas[qstNum].pregunta;
+        _questionText.text = _questionList.qst.preguntas[_generosPregutas[_qstTopic]].preguntas[_qstNum].pregunta;
 
         // Y dar la respuesta por consola (pa confirmar de momento)
-        Debug.Log("Respuesta: " + GetAnswerVF(_generosPregutas[qstTopic], qstNum));
+        Debug.Log("Respuesta: " + GetAnswerVF(_generosPregutas[_qstTopic], _qstNum));
     }
 
     // Esta funcion regresa si la respuesta correcta es verdadero o falso (True or False)
@@ -71,5 +82,22 @@ public class VFController : MonoBehaviour
         }
 
         return  false; // Para q la funcion no pete (pero nunca llegara a el)
+    }
+
+    // Esta es la funcion q ocurre cuando se le da click en V o F para cambiar y dar el feedback
+    public void CheckAnswer(bool answer) {
+        if (answer == GetAnswerVF(_generosPregutas[_qstTopic], _qstNum)) {
+            _checkAnimator.SetBool("Right", true);
+            _checkAnimator.SetTrigger("Start");
+            check.SetActive(true);
+        } else {
+            _checkAnimator.SetBool("Right", false);
+            _checkAnimator.SetTrigger("Start");
+            check.SetActive(true);
+        }
+
+        _checkAnimator.SetTrigger("Start");
+
+        ChangeQuestionVF();
     }
 }

@@ -37,9 +37,6 @@ public class VFController : MonoBehaviour
         // Primero se escoje uno de los generos seleccionados
         int tempRand = Random.Range(0, _generosPregutas.Count);
         int qstTopic = _generosPregutas[tempRand];
-        
-        Debug.Log(_questionList.qst.preguntas.Length);
-        Debug.Log(_generosPregutas[qstTopic]);
 
         // Genero un random q sera el numero de la preunta del Genero (obio en rango de la cantidad de preguntas)
         int qstNum = Random.Range(0, _questionList.qst.preguntas[_generosPregutas[qstTopic]].preguntas.Length);
